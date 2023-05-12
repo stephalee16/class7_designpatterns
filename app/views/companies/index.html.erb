@@ -1,11 +1,15 @@
-<% companies = Company.all %>
-
 <h1>My CRM</h1>
  
 <ul>
-  <% for company in companies %>
+  <% for i in @companies %>
     <li>
-      <%= company["name"] %>
+      <a href="/companies/<%=i["id"]%>"><%= i["name"] %></a>
     </li>
   <% end %>
 </ul>
+
+
+
+<p>
+<a href="/companies/new">New Company</a>
+</p>
