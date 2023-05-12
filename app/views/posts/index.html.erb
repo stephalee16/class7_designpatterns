@@ -1,9 +1,9 @@
 <div class="row">
   <% for post in @posts %>
     <div class="col-3">
-      <h4><%= post["author"] %></h4>
+      <h4><%= post["body"] %></h4>
       <img class="img-fluid" src="<%= post["image"] %>" class="w-full">
-      <p><%= post["body"] %></p>
+      <p><%= post["author"] %></p>
     </div>
   <% end %>
 </div>
